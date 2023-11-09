@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderContent } from './styled'
+import { HeaderContainer, HeaderContent, NewTransactionButton } from './styled'
 
 import logo from '../../assets/logo.svg'
 
@@ -6,7 +6,8 @@ export function Header() {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <img src={logo} alt="Logotipo do Ignite" />
+        <img src={logo} alt="" />
+        <NewTransactionButton>Nova transação</NewTransactionButton>
       </HeaderContent>
     </HeaderContainer>
   )
