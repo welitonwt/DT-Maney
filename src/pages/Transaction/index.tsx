@@ -1,11 +1,12 @@
 import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
+import { Search } from './components/SearchFrorm'
 
 import {
   PriceHighLight,
   TransactionContainer,
   TransactionsTable,
-} from './styled'
+} from './styles'
 
 export function Transaction() {
   return (
@@ -14,6 +15,7 @@ export function Transaction() {
       <Summary />
 
       <TransactionContainer>
+        <Search />
         <TransactionsTable>
           <tbody>
             <tr>

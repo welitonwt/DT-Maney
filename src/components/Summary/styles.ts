@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 export const SummaryContainer = styled.section`
   width: 100%;
@@ -12,11 +12,8 @@ export const SummaryContainer = styled.section`
 
   margin-top: -5rem;
 `
-interface SummaryCardProps {
-  variant?: 'green' | 'red'
-}
 
-export const SummaryCard = styled.div<SummaryCardProps>`
+export const SummaryCard = styled.div`
   background: ${(props) => props.theme['gray-600']};
   border-radius: 6px;
   padding: 2rem;
@@ -33,15 +30,14 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     margin-top: 1rem;
     font-size: 2rem;
   }
+`
+interface SummaryCardProps {
+  variant?: 'positive' | 'negative'
+}
 
-  ${(props) =>
-    props.variant === 'green' &&
-    css`
-      background: ${(props) => props.theme['green-700']};
-    `}
-  ${(props) =>
-    props.variant === 'red' &&
-    css`
-      background: ${props.theme['red-500']};
-    `}
+export const SummaryCardTotal = styled(SummaryCard)<SummaryCardProps>`
+  background: ${(props) =>
+    props.variant === 'positive'
+      ? props.theme['green-500']
+      : props.theme['red-500']};
 `
