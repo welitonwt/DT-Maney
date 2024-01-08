@@ -30,6 +30,14 @@ export const SummaryCard = styled.div`
     margin-top: 1rem;
     font-size: 2rem;
   }
+
+  .income {
+    color: ${(props) => props.theme['green-300']};
+  }
+
+  .outcome {
+    color: ${(props) => props.theme['red-300']};
+  }
 `
 interface SummaryCardProps {
   variant?: 'positive' | 'negative'
