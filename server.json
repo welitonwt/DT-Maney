@@ -1,0 +1,36 @@
+{
+  "transaction": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 1600,
+      "createdAt": "2023-12-16T10:24:45.509Z"
+    },
+    {
+      "id": 2,
+      "description": "Almoço",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 59,
+      "createdAt": "2023-12-26T13:29:57.578Z"
+    },
+    {
+      "id": 3,
+      "description": "Viagem Praia",
+      "type": "income",
+      "category": "Corrida",
+      "price": 1200,
+      "createdAt": "2023-12-13T13:29:57.578Z"
+    },
+    {
+      "id": 4,
+      "description": "Bate Volta Praia",
+      "type": "outcome",
+      "category": "lazer",
+      "price": 70,
+      "createdAt": "2023-12-08T13:29:57.578Z"
+    }
+  ]
+}
