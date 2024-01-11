@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
-import { Search } from './components/SearchFrorm'
+import { SearchForm } from './components/SearchFrorm'
 
 import {
   PriceHighLight,
@@ -20,7 +20,7 @@ export function Transaction() {
       <Summary />
 
       <TransactionContainer>
-        <Search />
+        <SearchForm />
         <TransactionsTable>
           <tbody>
             {transactions.map((transaction) => {
